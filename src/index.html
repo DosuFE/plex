@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Plex">
+    <meta name="msapplication-TileColor" content="#282A2D">
+    <title>Stream Movies & TV Shows / plex</title>
+    <link rel="icon" type="png" href="images/favicon-icon.png">
+    <link href="./output.css" rel="stylesheet"/>
+</head>
+<body>
+   <header class="bg-gradient-to-r from-[#a5112f] to-[#181818]">
+    <!-- HEADER NAV BAR -->
+      <nav class="mx-2 py-1 lg:py-3 lg:mx-3 bg-gradient-to-r from-[#640417] to-[#0a0a0a] opacity-100 rounded-md lg:flex lg:items-center lg:gap-5">
+            <!-- SITE LOGO -->
+           <div class="flex items-center justify-center md:justify-between space-x-6 md:px-3 lg:justify-start lg:pl-4 sm:gap-8 md:gap-12">
+              <img src="images/plex-logo.svg" class="w-[30px] sm:w-[35px] md:w-[40px] lg:w-[52.5px]" alt="Plex Logo"/>
+                <div class="relative">
+                   <input type="text" placeholder="Find Movies & Tv" class="w-[250px] sm:w-[350px] md:w-[380px] lg:w-[420px] outline-none bg-black opacity-50 p-2 placeholder:text-sm placeholder:text-slate-200 md:placeholder:text-sm lg:placeholder:text-base placeholder:pl-5 hover:outline-1 hover:outline-slate-100 cursor-pointer rounded-[20px]"/>
+                    <img src="images/search.svg" alt="search icon" class="absolute -top-[1px] pl-2 transition-transform hover:scale-90 ease-linear duration-300">
+                </div>
+               <img src="images/icon-menu.svg" alt="Icon Menu" class="lg:hidden"/>
+            </div>
+        
+            <!-- HEADER LINKS -->
+           <ul class="hidden md:hidden lg:flex lg:items-center lg:text-slate-300 lg:font-semibold lg:space-x-12">
+              <li><a href="http://" class="hover:text-slate-50 active:text-slate-100">Free Movies & TV</a></li>
+              <li><a href="http://" class="hover:text-slate-50 active:text-slate-100">Live TV</a></li>
+              <li><a href="http://" class="hover:text-slate-50 active:text-slate-100">Features</a></li>
+              <li><a href="http://" class="hover:text-slate-50 active:text-slate-100">Download</a></li>
+           </ul>
+
+           <!-- HEADER BUTTON -->
+        
+           <div class="hidden md:hidden lg:flex lg:items-center gap-6 border-l border-slate-400 pl-7">
+               <button class="bg-[#e5a00d] lg:font-semibold lg:text-base lg:px-3 rounded-sm hover:bg-[#f7c600d8] transition-transform hover:scale-90 ease-linear duration-300">Open Plex</button>
+                <img src="images/3.png" alt="S Logo" class="rounded-full lg:w-[30px]"/>
+            </div>
+        </nav>
+
+        <!-- HEADER SECTION -->
+        <div class="text-center">
+            <h1 class="text-[#f74366] pt-8 font-bold font-sans text-3xl md:text-5xl lg:text-7xl md:pt-6 lg:pt-12">Meet your TV concierge.</h1>
+            <p class="text-slate-300 pt-10 pb-6 text-sm sm:text-center md:text-base lg:text-lg max-w-[550px] lg:max-w-[650px] md:text-center lg:mx-auto">
+                Need something to watch? We're on it. Plex combines free movies & TV with your favourite streaming services,
+                 so there's always more to discover
+            </p>
+
+            <button class="mb-10 bg-[#f7c600] text-sm md:text-base lg:text-lg shadow-xl shadow-black  font-bold font-sans px-7 py-2 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Start Streaming</button>
+        </div>
+
+        <!-- HEADER SECTION LINKS -->
+        <div class="flex flex-col gap-6 px-8 lg:flex-row lg:justify-between">
+            <ul class="flex flex-col gap-10 items-start  md:flex md:flex-col md:gap-12 lg:flex lg:flex-row lg:items-center text-slate-50 font-semibold lg:space-x-12 font-sans">
+                <li><a href="http://" class="visited:text-[#f7c600] hover:text-slate-100 active:text-[#f7c600]">Movies & Shows</a></li>
+                <li><a href="http://" class="visited:text-[#f7c600] hover:text-slate-100 active:text-[#f7c600]">Live TV</a></li>
+                <li><a href="http://" class="visited:text-[#f7c600] hover:text-slate-100 active:text-[#f7c600]">Discover</a></li>
+                <li><a href="http://" class="visited:text-[#f7c600] hover:text-slate-100 active:text-[#f7c600]">Your Media</a></li>
+                <li><a href="http://" class="visited:text-[#f7c600] hover:text-slate-100 active:text-[#f7c600]">Your Music</a></li>
+             </ul>
+
+             <!-- HEADER SECTION LINKS ARROW -->
+            <div class="hidden lg:flex">
+               <a href="" target="_blank"><img src="images/angle-left.png" alt="Left Angle"/></a>
+               <a href="" target="_blank"><img src="images/angle-right.png" alt="Right Angle"/></a>
+            </div>
+        </div>
+
+        <!-- HEADER SECTION LINKS ABOUT  -->
+        <div class="bg-heropattern lg:w-[70rem] mx-auto bg-right-bottom bg-cover lg:bg-left lg:mt-5 bg-no-repeat py-10 lg:rounded-3xl">
+            <div class="pt-10 pl-8 lg:pl-10">
+                <h1 class="text-white font-semibold text-3xl font-sans lg:text-5xl">what we're watching now.</h1>
+                <p class="text-white md:max-w-[350px] lg:max-w-[400px] pt-6 font-sans">
+                    This is just a peek. Choose from thousand of free ad- supported titles from our own demand library.
+                </p>
+
+                <a href="http://www.plex.tv/live-tv/"><button class="mt-8 bg-white text-sm md:text-base lg:text-lg font-bold font-sans px-7 py-2 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">See What's On</button></a>
+            </div>
+
+            <!-- HEADER SECTION LINKS ABOUT MOVIES -->
+            <div class="pt-8 flex lg:flex-row items-center justify-center gap-6 lg:justify-evenly lg:gap-0">
+                <img src="images/photo (6).jfif"  alt="Fascape Movies" class="rounded-xl w-[100px] lg:w-[150px]"/>
+                <img src="images/photo (16).jfif" alt="Robocope Movies" class="rounded-xl w-[100px] lg:w-[150px]"/>
+                <img src="images/photo (7).jfif" alt="The Transproter Movies" class="rounded-xl w-[110px] md:block lg:w-[160px]"/>
+                <img src="images/photo (21).jfif" width="150px" alt="The Peaceeheaker Wars" class="rounded-xl w-[100px] hidden md:block lg:block lg:w-[150px]"/>
+                <img src="images/photo (20).jfif" width="150px" alt="Drew Carneys-A-Improvagader" class="rounded-xl w-[100px] hidden md:block lg:block lg:w-[150px]"/>
+                <img src="images/photo.jfif" width="150px" alt="The Cooks Tour" class="rounded-xl w-[100px] hidden md:block lg:block lg:w-[150px]"/>
+            </div>
+        </div>
+   </header>
+
+   <!-- SECTION ONE -->
+   <section class="bg-black py-40">
+    <!-- SECTION ONE WAYS OF DOWNLOADER -->
+      <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-evenly mx-5">
+        <!-- PLAY STORE  -->
+        <div class="flex flex-col space-y-5 bg-[#161616] max-w-[400px] pl-5 py-5 rounded-2xl lg:bg-black lg:max-w-none ">
+            <!-- API PLAY STORE -->
+            <div class="flex gap-2">
+                <img src="images/API-image.svg" alt="Android API"/>
+                <p class="text-slate-400 font-semibold text-xl font-sans mt-3">Play Store</p>
+            </div>
+            <!-- STAR STYLE -->
+            <div class="flex">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/half-star.svg" alt="Half Star/">
+            </div>
+            <!-- SECTION RATINGS -->
+           <div class="flex flex-col">
+             <p class="text-white font-sans font-semibold text-xl">4.4/5</p>
+             <p class="text-slate-400 font-[500] font-sans text-lg">329,603 ratings</p>
+           </div> 
+        </div>
+
+         <!-- APP DOWNLOADER  -->
+         <div class="flex flex-col space-y-5 bg-[#161616] max-w-[400px] pl-5 py-5 rounded-2xl lg:bg-black lg:max-w-none ">
+            <!-- APP STORE -->
+            <div class="flex gap-2">
+                <img src="images/Apple-image.svg" alt="Android APP"/>
+                <p class="text-slate-400 font-semibold text-xl font-sans mt-3">APP Store</p>
+            </div>
+            <!-- STAR STYLE -->
+            <div class="flex">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/half-star.svg" alt="Half Star/">
+            </div>
+            <!-- SECTION RATINGS -->
+           <div class="flex flex-col">
+             <p class="text-white font-sans font-semibold text-xl">4.7/5</p>
+             <p class="text-slate-400 font-[500] font-sans text-lg">105,183 ratings</p>
+           </div> 
+        </div>
+
+         <!-- ROKU APP STORE DOWNLOADER -->
+         <div class="flex flex-col space-y-5 bg-[#161616] max-w-[400px] pl-5 py-5 rounded-2xl lg:bg-black lg:max-w-none ">
+            <!-- ROKU APP STORE -->
+            <div class="flex gap-2">
+                <img src="images/Roku-log.svg" alt="Roku APP"/>
+                <p class="text-slate-400 font-semibold text-xl font-sans mt-4">APP Store</p>
+            </div>
+            <!-- STAR STYLE -->
+            <div class="flex">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/full-star-image.svg" alt="Full Star/">
+                <img src="images/half-star.svg" alt="Half Star/">
+            </div>
+            <!-- SECTION RATINGS -->
+           <div class="flex flex-col">
+             <p class="text-white font-sans font-semibold text-xl">4/5</p>
+             <p class="text-slate-400 font-[500] font-sans text-lg">143,174 ratings</p>
+           </div> 
+        </div>
+
+        <!-- DOWNLOADER -->
+        <div class="flex flex-col space-y-5">
+            <!-- ROKU APP STORE -->
+            <div class="">
+                <h3 class="text-xl text-white font-semibold font-sans">DOWNLOAD NOW</h3>
+            </div>
+            <!-- GOOGLE PLAY -->
+            <div class="flex flex-row gap-5 items-center lg:flex-col lg:space-y-5">
+              <a href="http://" target="_blank"><img src="images/badge-google-play.png" width="170px" alt="Google play" class="border-2 border-slate-100 rounded-md"/></a>
+               <a href="http://" target="_blank"><img src="images/badge-app-store.png" width="170px" alt="App Store" class="border-2 border-slate-100 rounded-md"/></a>
+            </div> 
+        </div>
+      </div>
+
+    <!-- SAVE DESIGN -->
+        <div class="">
+            <h1 class="pt-32 text-[#3e3200] text-6xl lg:text-9xl lg:text-[300px] font-black font-sans text-center">Save</h1>
+        </div>
+    
+        <!-- SECTION WATCHLIST -->
+        <div class="pt-10 lg:pt-20 justify-center flex flex-col-reverse gap-10 lg:flex-row items-center lg:justify-evenly">
+           <div class="relative">
+            <img src="images/watchlist-iphone-02.png" width="265px" alt="iPhone Logo" class="lg:block"/>
+            <img src="images/watchlist_button_bookmark.png" width="360px" alt="Button Bookmark" class="absolute top-64 bottom-44 rounded-lg"/>
+            <img src="images/watch-these-location.png" width="216px" alt="Location Logo" class="absolute top-[360px] left-8"/>
+           </div> 
+
+           <div class="px-5">
+            <h3 class="text-3xl lg:text-5xl text-[#f7c600] font-bold lg:max-w-[450px]">One list to rule them all.</h3>
+            <p class="pt-5 text-slate-200 font-sans text-base max-w-[400px] lg:max-w-[480px]">
+                With a free Plex account you can keep a singe, unified list for movie or TV show you hear about, on any service—even theater releases!
+                 You can finally stop hopping between watchlists on Max, Amazon Prime, Paramount+, and all your other streaming services, and 
+                 add it all on Plex instead.
+            </p>
+           <a href="http://www.plex.tv/sign-up/" target="_blank"> <button class="mb-5 mt-5 bg-[#f7c600] text-base lg:text-lg  font-bold font-sans px-12 py-3 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Create your free account</button></a>
+           </div>
+        </div>
+
+        <!-- WATCH -->
+        <div>
+            <h1 class="pt-32 text-[#3e111a] text-6xl lg:text-9xl lg:text-[300px] font-black font-sans text-center">Watch</h1>
+        </div>
+
+        <!-- SECTION WATCH MOVIES STREAMING -->
+        <div class="mx-auto  px-5 lg:flex lg:pl-10 pt-5 lg:pt-20 lg:flex-row items-center lg:justify-between">
+           <div>
+            <h3 class="text-3xl lg:text-5xl text-[#f74366] font-bold lg:max-w-[450px] font-sans">It's a great day to Discover.</h3>
+            <p class="pt-5 text-slate-200 font-sans text-base max-w-[400px] lg:max-w-[450px]">
+                Select your favourite streaming services (like <a href="https://www.plex.tv/what-to-watch/hulu/" class="text-[#f7c600]">Hulu</a>,
+                 <a href="https://www.plex.tv/what-to-watch/netflix/" class="text-[#f7c600]">Netflix</a>, Max, and Disney+) to discover more, search
+                 faster, and get curated recommendations-all without ever leaving Plex.
+            </p>
+           </div>
+
+           <!-- SECTION WATCH MOVIES EXAMLES -->
+           <div class="relative pt-8">
+              <img src="images/discover-screen-5.png" alt="Screen Discover 5" class="w-[500px] lg:w-[750px]  rounded-lg"/>
+              <img src="images/discovery-large-tile-1.png" alt="Large tile 1" class="w-[120px] lg:w-[340px] absolute top-[150px] left-[170px] lg:top-[150px] z-50 lg:left-[400px] rounded-xl lg:rounded-2xl"/>
+              <img src="images/select-services-new.png" alt="Select Services Logo" class="w-[220px] lg:w-[500px] absolute top-[200px] lg:top-[300px] lg:-left-[50px] z-10 rounded-xl lg:rounded-2xl"/> -->
+           </div>
+        </div>
+
+        <div class="container">
+            <!-- SECTION EXPLORE -->
+            <div class="">
+                <h1 class="pt-10 text-[#052a3f] text-6xl lg:text-[280px] font-black font-sans text-center">Explore</h1>
+            </div>
+
+            <!-- SECTION EXPLORE MORE -->
+            <div class="pt-10 lg:pt-20 pl-5 lg:flex lg:items-center lg:justify-evenly">
+                <h3 class="text-3xl lg:text-5xl text-[#15a9fc] font-bold lg:max-w-[450px] font-sans">Find your friends on Plex.</h3>
+                <div class="pt-8">
+                    <p class=" text-slate-200 font-sans text-base max-w-[400px] lg:max-w-[450px]">
+                       What if you could find what to watch to find next based on ratings and activity from you know in real life? With Discover
+                       Together, you can. Now you can search for and add friends, share, comment, and more.
+                    </p>
+                    <a href="http://www.plex.tv/blog/discover-together" target="_blank"> <button class="mb-5 mt-5 bg-[#f7c600] text-base lg:text-lg  font-bold font-sans px-8 py-3 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Learn More</button></a>
+                </div>
+            </div>
+
+            <!-- SECTION MOVIES MEDIA -->
+            <div class="relative px-5 pt-10 lg:pt-20">
+                <img src="images/profile-screen (1).png" alt="Profile Screen" class="w-[170px] lg:w-[400px] mx-auto"/>
+                <img src="images/watchlist-group (2).png" alt="Group Watchlist" class="w-[175px] top-5 lg:w-[350px] absolute lg:left-44"/>
+                <img src="images/watched-group (4).png" alt="Watch Group 03" class="w-[155px] top-[180px] lg:w-[350px] absolute lg:top-[350px] lg:left-52"/>
+                <img src="images/share-group (3).png" alt="Share Group 03" class="w-[138px] top-12 left-[210px] lg:w-[325px] absolute lg:top-16 lg:left-[750px]"/>
+                <img src="images/rating-group (1).png" alt="Rating Group 01" class="w-[156px] top-[155px] left-[200px] lg:w-[366px] absolute lg:top-[350px] lg:left-[760px]"/>
+            </div>
+        </div>
+   </section>
+
+   <!-- SECTION TWO -->
+   <section class="bg-[#15a4fc]">
+    <div class="pt-10 lg:pl-20 flex flex-col space-y-6 lg:flex-row lg:items-center lg:justify-between lg:space-x-10">
+        <div class="px-10">
+            <h3 class="text-[#322d5b] text-3xl max-w-[500px] lg:text-6xl font-sans font-bold lg:max-w-[600px]">You bring your media, we'll do the rest.</h3>
+            <p class="py-5 text-[#322d5b] text-base max-w-[400px] lg:max-w-[450px] font-sans">
+                We love  personal media tool! Use  Plex to organize, beautify, and stream your personal collection of movies, TV shows, music,
+                and photos anywhere, on all your devices.
+            </p>
+            <a href="http://www.plex.tv/your-media" target="_blank"> <button class="mb-5 bg-[#f7c600] text-base lg:text-lg  font-bold font-sans px-8 py-3 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Learn More</button></a>
+        </div>
+
+        <img src="images/pms-devices-image (1).png" alt="PMS Device image" class="w-[450px] lg:w-[800px] rounded-md px-10"/>
+    </div>
+   </section>
+
+   <!-- SECTION THREE FACT'S ABOUT -->
+   <section class="bg-black pb-10">
+    <div class="pt-10 px-7 lg:pt-20 justify-center flex flex-col-reverse gap-10 lg:flex-row items-center lg:justify-evenly"> 
+         <img src="images/discover-credits.png" alt="Discover Credit Image" class="w-[450px] lg:w-[560px]"/> 
+
+         <!-- SECTION THREE FAV ACTOR -->
+        <div class="">
+         <h3 class="text-4xl lg:text-6xl text-[#f7c600] font-bold lg:max-w-[450px]">And that's just (film) facts.</h3>
+         <p class="pt-5 text-slate-200 font-sans text-base max-w-[400px] lg:max-w-[480px]">
+            See what films and shows your favourite actor are in (and add them to your Watchlist) without ever leaving Plex! With Discover Credits,
+            it's all united into single page, including which of their titles availablein your personal media libraries, on Demand, or elsewhere, 
+            via Discover.
+         </p>
+         <!-- SECTION SEARCH STARS -->
+        <a href="http://www.plex.tv/person/nicolas-cage" target="_blank"> <button class="my-5 bg-[#f7c600] text-base lg:text-lg  font-bold font-sans px-8 py-3 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Search the stars</button></a>
+        </div>
+     </div>
+
+     <!-- SECTION STREAMING -->
+    <div class="mx-10 py-8 px-16 lg:mt-10 flex flex-col items-center justify-center bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#542346] via-[#ce2f57] to-[#169fed] rounded-xl">
+        <h1 class="text-white text-3xl lg:text-[140px] font-black font-sans lg:py-10">Streaming</h1>
+        
+        <div class="flex items-center justify-center lg:py-10">
+            <h1 class="text-[#f7c600] text-2xl lg:text-[140px] font-black font-serif text-center">Is Believing</h1>
+            <img src="images/plex-chevron (1).png" alt="Plex Chevron Image" class="w-[20px] lg:w-[50px]"/>
+        </div>
+        <a href="http://www.plex.tv/sign-in" target="_blank"> <button class="bg-[#f7c600] mt-2 text-base lg:text-lg  font-bold font-sans px-6 py-2 lg:px-8 lg:py-3 rounded-[30px] transition-transform hover:scale-90 ease-linear duration-300">Get Plex free</button></a>
+    </div>
+   </section>
+
+   <!-- SECTION THREE -->
+   <section class="bg-[#191919]">
+    <!-- SECTION THREE FAQ -->
+    <div class="">
+        <h2 class="text-white text-center pt-10 text-2xl lg:text-4xl font-sans font-semibold">Question or two? Here's is answer or two.</h2>
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="">What is Plex?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="">Is Plex really free?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv">Where is Plex available?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv">Where can I watch Plex?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv" class="">Do I need Plex account?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv" class="">How can I personalise my Plex experience?</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv" class="">What is Plex Pass? And can I use it to watch Plex ad-free? </a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+        </div>
+
+        <div class="bg-black my-10 lg:mx-32 mx-8 py-3 px-5 text-white font-semibold text-lg lg:text-xl rounded-lg flex items-center justify-between">
+            <a href="https://www.plex.tv" class="">Can I use Plex to enjoy my own personal media? </a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>  
+        </div>
+    </div>
+
+      <!-- SECTION PLEX BLOG -->
+      <div class="pb-10 bg-black w-full">
+        <h3 class="text-white font-sans font-bold text-3xl lg:text-4xl text-center pt-20">Plex Blog</h3>
+        <!-- SECTION PLEX COMMUNITY BG -->
+        <div class="my-10 mx-7 flex flex-col gap-5 lg:flex-row items-center justify-center lg:space-x-5">
+            <!-- SECTION PLEX BLOG -->
+            <div class="bg-blog-hero bg-no-repeat bg-cover w-[360px] lg:w-[380px] pl-7 opacity-70 rounded-xl">
+                <p class="text-white font-light text-base pt-40 font-sans">February 7, 2024</p>
+                <h2 class="text-white text-2xl font-bold font-sans max-w-[300px] pb-12">Welcome to Rental Land on plex.</h2>
+            </div>
+
+            <!-- SECTION RENTAL PLEX HERO -->
+            <div class="bg-plex-hero bg-no-repeat bg-cover bg-center w-[360px] lg:w-[380px] pl-7 opacity-70 rounded-xl">
+                <p class="text-white font-light text-base pt-40 font-sans">December 21, 2023</p>
+                <h2 class="text-white text-2xl font-bold font-sans max-w-[300px]">2023:</h2>
+                <h2 class="text-white text-2xl font-bold font-sans max-w-[300px] pb-12"> A Year of Discovery.</h2>
+            </div>
+
+            <!-- SECTION HERO COMMUNITY PHASE -->
+            <div class="bg-community-phase bg-no-repeat bg-cover bg-center w-[360px] lg:w-[380px] pl-7 opacity-70 rounded-xl">
+                <p class="text-white font-light text-base pt-36 font-sans">Novwmber 1, 2023</p>
+                <h2 class="text-white text-2xl font-bold font-sans max-w-[300px]">Discover Together:</h2>
+                <h2 class="text-white text-2xl font-bold font-sans max-w-[300px] pb-10">When the Sequel Lives to the Original.</h2>
+            </div>
+        </div>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer class="bg-[#3f4245]">
+    <!-- FOOTER LINKS -->
+    <div class="pt-16 pb-20 px-16 flex flex-col items-center gap-10 justify-center lg:flex-row lg:justify-between lg:items-start lg:space-x-5">
+        <div>
+            <a href="index.html" target="_blank"><img src="images/plex-logo.svg" alt="Plex Logo" class="w-[100px] lg:w-[120px]"/></a>
+        </div>
+
+        <div class="flex flex-col gap-7 lg:flex-row lg:space-x-8">
+            <!-- FOOTER COMPANY -->
+            <div class="flex items-center text-sm flex-col gap-3 lg:items-start ">
+                <a href="about.html" target="_blank" class="text-white font-bold font-sans hover:text-[#f7c600d8]">Company</a>
+                <a href="about.html" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">About</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Careers</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Our Culture</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Givings</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Partners</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plex Room</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plex Gear</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">The Plex Blog</a>
+            </div>
+
+            <!-- FOOTER PLEX PASS -->
+            <div class="flex items-center text-sm flex-col gap-3 lg:items-start ">
+                <a href="" target="_blank" class="text-white font-bold font-sans hover:text-[#f7c600d8]">Plex Pass</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Go Premium</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plexamp</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plex labs</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Get Perks</a>
+            </div>
+
+            <!-- FOOTER DOWNLOADS -->
+            <div class="flex items-center text-sm flex-col gap-3 lg:items-start ">
+                <a href="" target="_blank" class="text-white font-bold font-sans hover:text-[#f7c600d8]">Downloads</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plex Media Server</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Apps & Devices</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Plexamp</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Where to Watch</a>
+            </div>
+
+            <!-- FOOTER SUPPORT -->
+            <div class="flex items-center flex-col text-sm gap-3 lg:items-start ">
+                <a href="" target="_blank" class="text-white font-bold font-sans hover:text-[#f7c600d8]">Support</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">Finding Help</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">Support Library</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Community Forums</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">Billing Questions</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Status</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">Bug Bounty</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">CordCutter</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">Get in Touch</a>
+            </div>
+
+            <!-- FOOTER WATCH FREE -->
+            <div class="flex items-center text-sm flex-col gap-3 lg:items-start ">
+                <a href="" target="_blank" class="text-white  font-bold font-sans hover:text-[#f7c600d8]">Watch Free</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">TV Channel Finder</a>
+                <a href="" target="_blank" class="text-slate-300 font-light font-sans hover:text-[#f7c600d8]">What to Watch</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">What to Watch on Hulu</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">Plex Gear</a>
+                <a href="" target="_blank" class="text-slate-300  font-light font-sans hover:text-[#f7c600d8]">A24 collection</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-7 border-t border-slate-300">
+        <!--  FOOTER COPYRIGHT PLEX -->
+         <div class="container">
+            <div class="flex gap-3">
+                <p class="text-slate-500 text-sm font-sans">Copyright &copy 2024 Plex</p>
+                <a href="" target="_blank" class="text-slate-300 text-sm font-light font-sans hover:text-[#f7c600d8]">Privacy & Legacy</a>
+                <a href="" target="_blank" class="text-slate-300 text-sm font-light font-sans hover:text-[#f7c600d8]">Accessibility</a>
+                <a href="" target="_blank" class="text-slate-300 text-sm font-light font-sans hover:text-[#f7c600d8]">Manage Cookies</a>
+               <div class="flex gap-1">
+                <p class="text-slate-500 text-sm font-sans">Language:</p>
+                <a href="" target="_blank" class="text-slate-300 text-sm font-light font-sans hover:text-[#f7c600d8]">English (US)</a>
+               </div>
+            </div>
+
+         </div>
+    </div>
+   </footer>
+</body>
+</html>
